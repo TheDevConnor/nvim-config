@@ -38,6 +38,7 @@ return {
         "prismals",
         "pyright",
         "zls",
+        "clangd"
       },
     })
 
@@ -48,6 +49,7 @@ return {
         "isort", -- python formatter
         "black", -- python formatter
         "pylint",
+        "clangd",
         "eslint_d",
       },
     })

@@ -13,7 +13,6 @@ return {
 
     local util = require("lspconfig/util")
 
-
     -- import mason_lspconfig plugin
     local mason_lspconfig = require("mason-lspconfig")
 
@@ -97,19 +96,11 @@ return {
         })
       end,
 
-      ["clang++"] = function()
+      ["clangd"] = function()
         -- configure cpp language server
-        lspconfig["clang++"].setup({
+        lspconfig["clangd"].setup({
           capabilities = capabilities,
           filetypes = { "cpp" },
-        })
-      end,
-
-      ["clang"] = function()
-        -- configure cpp language server
-        lspconfig["clang"].setup({
-          capabilities = capabilities,
-          filetypes = { "c" },
         })
       end,
 
